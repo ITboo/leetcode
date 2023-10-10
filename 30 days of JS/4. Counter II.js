@@ -20,3 +20,16 @@ function createCounter(init) {
         },
     };
 }
+
+// another one
+function createCounter(init) {
+    let val = init;
+    const increment = () => ++val;
+    const decrement = () => --val;
+    const reset = () => { return val = init }
+    return {
+        increment,
+        decrement,
+        reset
+    };
+};
